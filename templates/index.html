@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+</head>
+<body>
+<form class="pure-form" method="POST" action="/">
+    <fieldset>
+        <legend>Let's find your Body Mass Index aka BMI</legend>
+        <input type="number" placeholder="weight" name="weight" /><br>
+        <input type="number" placeholder="height" name="height" /><br>
+        <button type="submit" class="pure-button pure-button-primary">Calculate</button>
+    </fieldset>
+</form>
+
+<div>
+	{% if bmi != 0.0 %}
+	<p>Your BMI is {{ bmi }}</p>
+	{% endif %}
+</div>
+</body>
+</html>
